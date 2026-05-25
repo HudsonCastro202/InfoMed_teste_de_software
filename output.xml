@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.5 on win32)" generated="2026-05-25T14:41:52.304736" rpa="false" schemaversion="5">
+<suite id="s1" name="Login" source="C:\Users\perei\OneDrive\Área de Trabalho\InfoMed_teste_de_software-main\InfoMed_teste_de_software-main\login.robot">
+<test id="s1-t1" name="CT01 - Login válido" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-25T14:41:52.877146" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/perei/OneDrive/Área%20de%20Trabalho/InfoMed_teste_de_software-main/InfoMed_teste_de_software-main/index.html'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-25T14:41:52.876883" elapsed="5.593793"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-25T14:41:58.471151" elapsed="0.028827"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-25T14:41:58.500661" level="INFO">Typing text 'teste@exdex.com' into text field 'xpath=//input[@type='email']'.</msg>
+<arg>xpath=//input[@type='email']</arg>
+<arg>teste@exdex.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-25T14:41:58.500248" elapsed="0.095611"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-05-25T14:41:58.596598" level="INFO">Typing password into text field 'xpath=//input[@type='password']'.</msg>
+<msg time="2026-05-25T14:41:58.624341" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>xpath=//input[@type='password']</arg>
+<arg>123456</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-25T14:41:58.596232" elapsed="0.059090"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-05-25T14:41:58.655760" level="INFO">Clicking button 'xpath=//button[contains(text(),'Entrar')]'.</msg>
+<arg>xpath=//button[contains(text(),'Entrar')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-25T14:41:58.655559" elapsed="0.057739"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-25T14:42:01.714184" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-25T14:41:58.713609" elapsed="3.000684"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-05-25T14:42:01.714583" elapsed="2.127413"/>
+</kw>
+<status status="PASS" start="2026-05-25T14:41:52.875941" elapsed="10.966309"/>
+</test>
+<test id="s1-t2" name="CT02 - Login inválido" line="22">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-25T14:42:03.843178" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/perei/OneDrive/Área%20de%20Trabalho/InfoMed_teste_de_software-main/InfoMed_teste_de_software-main/index.html'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-25T14:42:03.842953" elapsed="1.717673"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-25T14:42:05.560907" elapsed="0.018457"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-25T14:42:05.579852" level="INFO">Typing text 'errado@erro.com' into text field 'xpath=//input[@type='email']'.</msg>
+<arg>xpath=//input[@type='email']</arg>
+<arg>errado@erro.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-25T14:42:05.579614" elapsed="0.080652"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-05-25T14:42:05.660773" level="INFO">Typing password into text field 'xpath=//input[@type='password']'.</msg>
+<msg time="2026-05-25T14:42:05.683526" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>xpath=//input[@type='password']</arg>
+<arg>111111</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-25T14:42:05.660523" elapsed="0.053667"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-05-25T14:42:05.714633" level="INFO">Clicking button 'xpath=//button[contains(text(),'Entrar')]'.</msg>
+<arg>xpath=//button[contains(text(),'Entrar')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-25T14:42:05.714426" elapsed="0.057112"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-25T14:42:08.772449" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-25T14:42:05.771776" elapsed="3.000777"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-05-25T14:42:08.772839" elapsed="2.128909"/>
+</kw>
+<status status="PASS" start="2026-05-25T14:42:03.842574" elapsed="7.059435"/>
+</test>
+<status status="PASS" start="2026-05-25T14:41:52.306458" elapsed="18.596002"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Login" id="s1" pass="2" fail="0" skip="0">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
